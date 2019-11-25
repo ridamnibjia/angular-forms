@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
  // @ts-ignore
   ngOnInit() {
    this.myForm = this.fb.group({
-     name : 'R',
-     email: 'ridamnibjia21@gmail.com',
-     phone: '9414032461',
-     city: 'Ahmedabad'
+     name : 'Rjh',
+     email: 'uhjc',
+     phone: 'yhjh',
+     city: 'oytjyhjntyjh'
    });
     // this.myForm = this.fb.group({
     //   email: '',

@@ -17,9 +17,9 @@ export class SimpleReactiveFormComponent implements OnInit {
   ngOnInit() {
     this.myForm = this.fb.group({
       name : 'R',
-      email: 'ridamnibjia21@gmail.com',
-      phone: '9414032461',
-      city: 'Ahmedabad'
+      email: 'hdrtgh',
+      phone: 'yhtgh',
+      city: 'thdg'
     });
     // this.myForm = this.fb.group({
     //   email: '',

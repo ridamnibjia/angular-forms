@@ -33,8 +33,8 @@ export class SimpleReactiveForm2Component implements OnInit {
         Validators.minLength(10)]]
     })
     this.myForm = this.fb.group({
-      name: ['Ridam Jain', [Validators.required, Validators.minLength(4)]],
-      email: ['ridamnibjia21@gmail.com', [Validators.required, Validators.email]],
+      name: ['vfzdff', [Validators.required, Validators.minLength(4)]],
+      email: ['gvfvdfzv', [Validators.required, Validators.email]],
       phone: phone1,
       contact: mobile
     });

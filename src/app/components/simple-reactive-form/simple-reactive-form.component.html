@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>
+    Form Array
+  </h1>
+  <h4>
+    Value : {{myForm.value | json}}
+  </h4>
+  <hr>
+  <form action="" class="form-group" [formGroup]="myForm">
+    <label>
+      <input type="text" placeholder="Enter name" class="form-control" formControlName="name">
+    </label>
+    <label>
+      <input type="email" class="form-control" placeholder="Enter Email" formControlName="email">
+    </label>
+    <label>
+      <input type="number" placeholder="Enter Contact Number " class="form-control" formControlName="phone">
+    </label>
+    <label for="list"></label>
+    <select name="City List" id="list" class="form-control" formControlName="city">
+      <option value="Surat">Surat</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+    </select>
+  </form>
+</div>

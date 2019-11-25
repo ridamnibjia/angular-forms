@@ -1,0 +1,69 @@
+<div class="container">
+  <h1>
+    Form - 2
+  </h1>
+  <h4>
+    Value : {{myForm.value | json}}
+  </h4>
+  <hr>
+  <form class="form-group" [formGroup]="myForm">
+    <mat-form-field>
+      <input matInput type="text" placeholder="Enter name" class="form-control" formControlName="name">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="email" class="form-control" placeholder="Enter Email" formControlName="email">
+    </mat-form-field>
+<h3>
+  Phone Number
+</h3>
+
+    <div formGroupName="phone">
+      <mat-form-field>
+      <input matInput maxlength="3" placeholder="Enter Area Code"  class="form-control" formControlName="area">
+      </mat-form-field>
+
+      <br>
+      <mat-hint>
+        Area Code should be of 3 characters.
+      </mat-hint>
+      <br>
+      <mat-form-field>
+        <input matInput class="form-control"  placeholder="Enter the Number " maxlength="10" formControlName="numb" >
+      </mat-form-field>
+      <br>
+      <mat-hint>
+        Number should be of 10 characters.
+      </mat-hint>
+      <br>
+    </div>
+    <br>
+    <h3>
+      Contact Number
+    </h3>
+
+    <div formGroupName="contact">
+
+      <mat-form-field>
+        <input matInput placeholder="Enter Area Code" maxlength="3" class="form-control" formControlName="area">
+      </mat-form-field>
+      <br>
+      <mat-hint>
+        Area Code should be of 3 characters.
+      </mat-hint>
+      <br>
+
+      <mat-form-field>
+        <input matInput class="form-control"  placeholder="Enter the Number " maxlength="10" formControlName="numb">
+      </mat-form-field>
+      <br>
+      <mat-hint>
+        Number should be of 10 characters.
+      </mat-hint>
+      <br>
+
+      <button mat-raised-button color="primary" [disabled]="this.myForm.invalid">Submit</button>
+    </div>
+
+      </form>
+</div>

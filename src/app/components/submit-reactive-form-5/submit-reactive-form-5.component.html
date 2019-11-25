@@ -1,0 +1,25 @@
+
+<div class="container">
+<h1>
+  Feedback Form
+</h1>
+  <br>
+
+  <mat-form-field [formGroup]="myForm">
+    <input matInput type="email" #email placeholder="Type Your Email Address" formControlName="email">
+<mat-error>
+INVALID EMAIL
+</mat-error>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width">
+    <textarea matInput #message placeholder="Message" style="width: 100%"></textarea>
+    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+  <br>
+  <button style="margin-top: 40px" type="submit" mat-button color="primary" [disabled]="myForm.invalid">Submit</button>
+</div>
+
+

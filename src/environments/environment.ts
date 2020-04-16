@@ -4,14 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: '',
-    authDomain: 'angularfire2-sample-5cc1f.firebaseapp.com',
-    databaseURL: 'https://angularfire2-sample-5cc1f.firebaseio.com',
-    projectId: 'angularfire2-sample-5cc1f',
-    storageBucket: 'angularfire2-sample-5cc1f.appspot.com',
-    messagingSenderId: '151418899999',
-  }
+  
 };
 
 /*
